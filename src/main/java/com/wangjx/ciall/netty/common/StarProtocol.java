@@ -16,7 +16,7 @@ public class StarProtocol {
     /**
      * 消息的开头的信息标志
      */
-    private int head_data = ConstantValue.HEAD_DATA;
+    private final int headData = ConstantValue.HEAD_DATA;
     /**
      * 消息的长度
      */
@@ -40,7 +40,7 @@ public class StarProtocol {
     }
 
     public int getHead_data() {
-        return head_data;
+        return headData;
     }
 
     public int getContentLength() {
@@ -61,7 +61,7 @@ public class StarProtocol {
 
     @Override
     public String toString() {
-        return "StarProtocol [head_data=" + head_data + ", contentLength="
+        return "StarProtocol [head_data=" + headData + ", contentLength="
                 + contentLength + ", content raw data=" + new String(content) + "]";
     }
 

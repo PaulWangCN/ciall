@@ -2,7 +2,7 @@ package com.wangjx.ciall.netty.common;
 
 /**
  * @ClassName: StarData
- * @Description: TODO
+ * @Description: 自定义数据格式
  * @Author: wangjiaxing
  * @Date: 2021/04/21 17:06
  * @Version 1.0

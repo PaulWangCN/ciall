@@ -23,24 +23,23 @@ public class LogWriter {
     private static ScheduledExecutorService exec = Executors.newScheduledThreadPool(1);
 
     public void logMsg(File logFile, String msgInfo) throws IOException {
-        if(!logFile.exists()) {
+        if (!logFile.exists()) {
             logFile.createNewFile();
         }
-        Writer txtWriter = new FileWriter(logFile,true);
+        Writer txtWriter = new FileWriter(logFile, true);
         txtWriter.write(dateFormat.format(new Date()) + "\t" + msgInfo + "\n");
         txtWriter.flush();
         txtWriter.close();
     }
 
-    public void stop(){
-        if(exec != null){
+    public void stop() {
+        if (exec != null) {
             exec.shutdown();
             System.out.println("file write stop ！");
         }
     }
 
     public static void main(String[] args) throws Exception {
-
         final LogWriter logWriter = new LogWriter();
         final File tmpLogFile = new File("./mock.log");
         final String msgInfo = "test !";
@@ -57,6 +56,4 @@ public class LogWriter {
         }, 0, 5, TimeUnit.SECONDS);
 
     }
-
-
 }

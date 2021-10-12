@@ -2,7 +2,7 @@ package com.wangjx.ciall.netty.common;
 
 /**
  * @ClassName: ConstantValue
- * @Description:
+ * @Description: 常量类
  * @Author: wangjiaxing
  * @Date: 2021/04/20 16:11
  * @Version 1.0

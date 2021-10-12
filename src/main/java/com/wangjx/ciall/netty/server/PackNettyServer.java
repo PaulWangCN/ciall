@@ -15,7 +15,7 @@ import io.netty.handler.logging.LoggingHandler;
 
 /**
  * @ClassName: PackNettyServer
- * @Description: TODO
+ * @Description: 自定义协议netty服务端
  * @Author: wangjiaxing
  * @Date: 2021/04/19 17:36
  * @Version 1.0

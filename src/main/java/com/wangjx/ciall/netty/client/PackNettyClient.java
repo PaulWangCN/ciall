@@ -13,7 +13,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 
 /**
  * @ClassName: PackNettyClient
- * @Description: TODO
+ * @Description: 自定义协议netty客户端
  * @Author: wangjiaxing
  * @Date: 2021/04/19 17:35
  * @Version 1.0
